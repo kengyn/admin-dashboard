@@ -40,6 +40,7 @@ body {
   grid-template-columns: 2fr 1fr;
   padding: 20px 0 10px 0;
   row-gap: 25px;
+  position: relative;
 }
 
 .searchContainer {
@@ -156,6 +157,13 @@ body {
   gap: 20px;
 }
 
+.projectBtns {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
 .announcementContainer {
   display: grid;
   grid-template-rows: 22px 1fr;
@@ -197,12 +205,40 @@ body {
   display: grid;
   grid-template-columns: 36px 1fr;
   column-gap: 20px;
+  height: 50px;
 }
 
 .trend .profilePic {
+  width: 120%;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.trend .gudako {
   width: 100%;
   grid-area: 1 / 1 / 3 / 2;
 }
+.trend .mash {
+  width: 90%;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.trend .fou {
+  width: 140%;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
 .trend p:first-of-type {
   font-weight: bold;
+}
+
+p:not(:first-of-type),
+.project p {
+  color: rgb(82, 80, 80);
+}
+
+.project,
+.realAnnouncement,
+.trending,
+.headerContainer {
+  box-shadow: 2px 2px 5px gray;
 }
